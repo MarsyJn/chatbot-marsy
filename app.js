@@ -64,7 +64,7 @@ const flow3 = addKeyword(['3']).addAnswer(
     ['¿En qué podemos ayudarte?', 
     'En un momento nos pondremos en contacto contigo',
 
-    'Escribe (Hola) para Menú principal',
+    'Escribe la palabra _*(Hola)*_ para Menú principal',
 
     '\n*4* Para siguiente paso.'],
     null,
