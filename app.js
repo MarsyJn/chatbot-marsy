@@ -37,22 +37,22 @@ const flowTuto = addKeyword(['tutorial', 'tuto']).addAnswer(
 const flow1 = addKeyword(['1']).addAnswer(
     
     [
-        'Acné https://www.facebook.com/photo/?fbid=707927788002853&set=p.707927788002853',
+        '*Acné* https://www.facebook.com/photo/?fbid=707927788002853&set=p.707927788002853\n',
 
-        'Eliminación de Lunares https://www.facebook.com/photo/?fbid=707927894669509&set=p.707927894669509',
+        '*Eliminación de Lunares* https://www.facebook.com/photo/?fbid=707927894669509&set=p.707927894669509\n',
         
-        'Eliminación de Verrugas https://www.facebook.com/photo/?fbid=707927974669501&set=p.707927974669501',
+        '*Eliminación de Verrugas* https://www.facebook.com/photo/?fbid=707927974669501&set=p.707927974669501',
         
-        'Eliminación de Tatuajes https://www.facebook.com/photo/?fbid=707928061336159&set=p.707928061336159',
+        '*Eliminación de Tatuajes* https://www.facebook.com/photo/?fbid=707928061336159&set=p.707928061336159',
         
-        'Hipercromías(Machas en la piel) https://www.facebook.com/photo/?fbid=707928161336149&set=p.707928161336149',
+        '*Hipercromías(Machas en la piel)* https://www.facebook.com/photo/?fbid=707928161336149&set=p.707928161336149',
         
-        'Faciales',
+        '*Faciales*',
         
-        'Tratamientos corporales',
+        '*Tratamientos corporales*',
 
 
-        'Escribe (Hola) para Menú principal',
+        'Escribe (_*Hola_) para Menú principal',
 
         '\n*4* Para siguiente paso.',
     ],
