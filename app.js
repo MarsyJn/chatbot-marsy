@@ -1,8 +1,13 @@
-const { createBot, createProvider, createFlow, addKeyword } = require('@bot-whatsapp/bot')
+const { createBot, createProvider, createFlow, addKeyword, addAnswer } = require('@bot-whatsapp/bot')
 
 const QRPortalWeb = require('@bot-whatsapp/portal')
 const BaileysProvider = require('@bot-whatsapp/provider/baileys')
 const MockAdapter = require('@bot-whatsapp/database/mock')
+
+const flowMultimedia = addKeyword(['Servicios,servicios'])
+.addAnswer('Estos son nuestros servicios:',{
+    media: 'https://scontent.fslp1-1.fna.fbcdn.net/v/t39.30808-6/327018226_2003323743207318_835205794291103539_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeFiYx3a3B8t-bh6Qv3bzZKXgMAuPZt418SAwC49m3jXxEMYrx-8dzklU5sxC-1-uPg&_nc_ohc=n62SRJuK_XAAX9HHYJu&_nc_ht=scontent.fslp1-1.fna&oh=00_AfAmenEkmsutIHMKOOWVtdTPVEwGJrzPDVyIHgN_p7x3xQ&oe=6471B3D1'
+})
 
 const flowSecundario = addKeyword(['4', 'siguiente']).addAnswer(['En *Dermo Organic Center* somos especialistas en *Salud* y *Belleza* de la piel.\nEn un momento nos comunicaremos contigo.\nGracias por tu paciencia'])
 
@@ -35,10 +40,10 @@ const flowTuto = addKeyword(['tutorial', 'tuto']).addAnswer(
 )
 
 const flow1 = addKeyword(['1']).addAnswer(
-    
+
     [
         '*Acné* https://www.facebook.com/photo/?fbid=707927788002853&set=p.707927788002853\n',
-
+      
         '*Eliminación de Lunares* https://www.facebook.com/photo/?fbid=707927894669509&set=p.707927894669509\n',
         
         '*Eliminación de Verrugas* https://www.facebook.com/photo/?fbid=707927974669501&set=p.707927974669501\n',
@@ -81,6 +86,8 @@ const flowPrincipal = addKeyword(['hola', 'buenas', 'informacion', 'info'])
             '👉 *1* Quiero mas información de un servicio',
             '👉 *2* Quiero agendar una cita',
             '👉 *3* Otro',
+            '👉 *servicios* Para conocer que servicios manejamos',
+
         ],
         null,
         null,
@@ -89,7 +96,7 @@ const flowPrincipal = addKeyword(['hola', 'buenas', 'informacion', 'info'])
 
 const main = async () => {
     const adapterDB = new MockAdapter()
-    const adapterFlow = createFlow([flowPrincipal])
+    const adapterFlow = createFlow([flowPrincipal,flowMultimedia])
     const adapterProvider = createProvider(BaileysProvider)
 
     createBot({
