@@ -52,9 +52,9 @@ const flow1 = addKeyword(['1']).addAnswer(
         '*Tratamientos corporales*\n',
 
 
-        'Escribe (_*Hola*_) para Menú principal',
+        'Escribe _*(Hola)*_ para Menú principal\n',
 
-        '\n*4* Para siguiente paso.',
+        '*4* Para siguiente paso.',
     ],
     null,
     null,
@@ -74,10 +74,10 @@ const flow3 = addKeyword(['3']).addAnswer(
 )
 
 const flowPrincipal = addKeyword(['hola', 'buenas', 'informacion', 'info'])
-    .addAnswer('🙌 Hola, bienvenido a Dermo Organic Center')
+    .addAnswer('🙌 Hola, bienvenido a *Dermo Organic Center*')
     .addAnswer(
         [
-            'Selecciona la opción que desees escribiendo el número de la misma.',
+            'Selecciona la opción que desees.',
             '👉 *1* Quiero mas información de un servicio',
             '👉 *2* Quiero agendar una cita',
             '👉 *3* Otro',
