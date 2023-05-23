@@ -35,6 +35,7 @@ const flowTuto = addKeyword(['tutorial', 'tuto']).addAnswer(
 )
 
 const flow1 = addKeyword(['1']).addAnswer(
+    
     [
         'Acné https://www.facebook.com/photo/?fbid=707927788002853&set=p.707927788002853',
 
@@ -77,9 +78,9 @@ const flowPrincipal = addKeyword(['hola', 'buenas', 'informacion', 'info'])
     .addAnswer(
         [
             'Selecciona la opción que desees escribiendo el número de la misma.',
-            '👉 1 Quiero mas información de un servicio',
-            '👉 2 Quiero agendar una cita',
-            '👉 3 Otro',
+            '👉 *1* Quiero mas información de un servicio',
+            '👉 *2* Quiero agendar una cita',
+            '👉 *3* Otro',
         ],
         null,
         null,
