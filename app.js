@@ -46,7 +46,7 @@ const flow1 = addKeyword(['1']).addAnswer(
         
         'Hipercromías(Machas en la piel) https://www.facebook.com/photo/?fbid=707928161336149&set=p.707928161336149',
         
-        'Faciales ',
+        'Faciales',
         
         'Tratamientos corporales',
 
@@ -76,7 +76,7 @@ const flowPrincipal = addKeyword(['hola', 'buenas', 'informacion', 'info'])
     .addAnswer('🙌 Hola, bienvenido a Dermo Organic Center')
     .addAnswer(
         [
-            'Selecciona la opción que desees',
+            'Selecciona la opción que desees escribiendo el número de la misma.',
             '👉 1 Quiero mas información de un servicio',
             '👉 2 Quiero agendar una cita',
             '👉 3 Otro',
