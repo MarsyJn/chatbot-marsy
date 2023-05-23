@@ -4,17 +4,17 @@ const QRPortalWeb = require('@bot-whatsapp/portal')
 const BaileysProvider = require('@bot-whatsapp/provider/baileys')
 const MockAdapter = require('@bot-whatsapp/database/mock')
 
-const flowSecundario = addKeyword(['4', 'siguiente']).addAnswer(['En Dermo Organic Center somos especialistas en Salud y Belleza de la piel.            En un momento nos comunicaremos contigo. Gracias por tu paciencia'])
+const flowSecundario = addKeyword(['4', 'siguiente']).addAnswer(['En *Dermo Organic Center* somos especialistas en *Salud* y *Belleza* de la piel.\nEn un momento nos comunicaremos contigo.\nGracias por tu paciencia'])
 
 const flow2 = addKeyword(['2']).addAnswer(
     [
-        'Nuestro horario de atención es de Lunes a Viernes de 11:00 am a 6:00 pm y Sabados de 11:00 am a 2:00 pm',
+        'Nuestro horario de atención es de Lunes a Viernes de 11:00 am a 6:00 pm y Sabados de 11:00 am a 2:00 pm\n',
 
-        '¿Qué horario es de tu prefencia?',
+        '¿Qué horario es de tu prefencia?\n',
 
-        'En un momento nos comunicaremos contigo',
+        'En un momento nos comunicaremos contigo\n',
         
-        'Escribe (Hola) para Menú principal',
+        'Escribe _*(Hola)*_ para Menú principal\n',
 
         '\n*4* Para siguiente paso.',
     ],
@@ -41,18 +41,18 @@ const flow1 = addKeyword(['1']).addAnswer(
 
         '*Eliminación de Lunares* https://www.facebook.com/photo/?fbid=707927894669509&set=p.707927894669509\n',
         
-        '*Eliminación de Verrugas* https://www.facebook.com/photo/?fbid=707927974669501&set=p.707927974669501',
+        '*Eliminación de Verrugas* https://www.facebook.com/photo/?fbid=707927974669501&set=p.707927974669501\n',
         
-        '*Eliminación de Tatuajes* https://www.facebook.com/photo/?fbid=707928061336159&set=p.707928061336159',
+        '*Eliminación de Tatuajes* https://www.facebook.com/photo/?fbid=707928061336159&set=p.707928061336159\n',
         
-        '*Hipercromías(Machas en la piel)* https://www.facebook.com/photo/?fbid=707928161336149&set=p.707928161336149',
+        '*Hipercromías(Machas en la piel)* https://www.facebook.com/photo/?fbid=707928161336149&set=p.707928161336149\n',
         
-        '*Faciales*',
+        '*Faciales*\n',
         
-        '*Tratamientos corporales*',
+        '*Tratamientos corporales*\n',
 
 
-        'Escribe (_*Hola_) para Menú principal',
+        'Escribe (_*Hola*_) para Menú principal',
 
         '\n*4* Para siguiente paso.',
     ],
