@@ -82,7 +82,7 @@ const flowPrincipal = addKeyword(['hola', 'buenas', 'informacion', 'info'])
     .addAnswer('🙌 Hola, bienvenido a *Dermo Organic Center*')
     .addAnswer(
         [
-            'Selecciona la opción que desees.',
+            '😊Selecciona la opción que desees.',
             '👉 *1* Quiero mas información de un servicio',
             '👉 *2* Quiero agendar una cita',
             '👉 *3* Otro',
